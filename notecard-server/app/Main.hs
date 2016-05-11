@@ -1,6 +1,8 @@
 module Main where
 
-import Lib
+
+import Notecard.Lib
+
 
 main :: IO ()
 main = startApp

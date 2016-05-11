@@ -1,15 +1,19 @@
 {-# LANGUAGE DataKinds       #-}
 {-# LANGUAGE TemplateHaskell #-}
 {-# LANGUAGE TypeOperators   #-}
-module Lib
+
+
+module Notecard.Lib
     ( startApp
     ) where
+
 
 import Data.Aeson
 import Data.Aeson.TH
 import Network.Wai
 import Network.Wai.Handler.Warp
 import Servant
+
 
 data User = User
   { userId        :: Int
